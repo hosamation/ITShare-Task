@@ -1,0 +1,188 @@
+/* Variables
+------------- */
+:root {
+  --padding: 60px 0;
+}
+/* Start Global Rules
+---------------------- */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Small Screen
+---------------- */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium Screen
+---------------- */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large Screen
+---------------- */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules
+-------------------- */
+/* Start Landing */
+.landing {
+  padding: var(--padding);
+  text-align: center;
+}
+.landing .image{
+}
+.landing .image img {
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.landing h2 {
+  color: #00a2ff;
+  margin: 20px  ;
+}
+.landing p {
+
+}
+/* End Landing */
+/* Start Skills */
+.skills {
+  background-color: #ddd;
+}
+.skills .my-skills{
+  padding: var(--padding);
+}
+.skills .my-skills h2 {
+  text-align: center;
+  color: #00a2ff;
+}
+.skills .my-skills .skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+.skills .my-skills .skill-info.reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .skills .my-skills .skill-info,
+  .skills .my-skills .skill-info.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.skills .my-skills .skill-info .image {
+  
+}
+.skills .my-skills .skill-info .image img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.skills .my-skills .skill-info .info {}
+.skills .my-skills .skill-info .info h3 {
+  margin: 10px 0;
+  color: #00a2ff;
+}
+.skills .my-skills .skill-info .info p {}
+/* End Skills */
+/* Make Dots
+------------ */
+.dots {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  margin: 40px auto;
+  border-radius: 50%;
+  box-shadow: 15px 0 #ddd,
+    30px 0 #ddd,
+    45px 0 #ddd,
+    -15px 0 #ddd,
+    -30px 0 #ddd,
+    -45px 0 #ddd;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* Start Contact */
+.contact {
+  text-align: center;
+}
+.contact h2 {
+  color: #00a2ff;
+}
+.contact p {
+  margin: 20px 0 50px;
+}
+.contact p:first-of-type {
+  margin: 10px 0 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.contact a {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px 30px;
+  background-color: #00a2ff;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #00a2ff;
+  transition: box-shadow 0.3s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -ms-transition: box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+}
+.contact a:hover {
+  box-shadow: 2px 2px 5px 5px #00a2ff;
+}
+/* End Contact */
+/* Start Footer */
+footer {
+  margin: 40px 0 0;
+  padding: var(--padding);
+  background-color: #ddd;
+  text-align: center;
+}
+footer a {
+  margin: 20px 30px;
+}
+/* End Footer */
